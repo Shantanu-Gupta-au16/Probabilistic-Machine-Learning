@@ -1,0 +1,10 @@
+xx<-rnorm(50)
+yy=xx+rnorm(50)
+zz=2*xx+yy+rnorm(50)
+DD<- cbind(xx,yy,zz)
+DD
+install.packages("rgl", dependencies = TRUE) 
+library(rgl) 
+plot3d(DD) 
+prcomp(DD) 
+biplot(prcomp(DD))
